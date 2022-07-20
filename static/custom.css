@@ -105,6 +105,14 @@ input {
   color: black;
 }
 
+.text-gray {
+  color: #929292;
+}
+
+.text-primary { 
+  color: #002d5a;
+}
+
 .text-center {
   text-align: center;
 }
@@ -130,7 +138,7 @@ input {
 }
 
 .p-0 {
-  padding: 0px;
+  padding: 0px!important;
 }
 
 .m-0 {
@@ -173,11 +181,24 @@ input {
   font-weight: 700;
 }
 
-/* JOB CARD SLIDER */
-
 .jobCard {
   border: 1px solid gray;
+  box-shadow: #D0D0D0 0px 5px 10px;
+  padding: 4%;
+  margin-left: 4%;
+  margin-right: 4%;
 }
+
+.btn-primary {
+  background-color: #033076;
+  color: white;
+  border: 0px;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 100px;
+}
+
+/* JOB CARD SLIDER */
 
 .slider,
 .jobSlider {
@@ -203,7 +224,7 @@ input {
   width: 100%;
 }
 
-.slide {
+.slide, .jobSlide {
   display: none;
   height: 100%;
   position: absolute;
@@ -245,7 +266,7 @@ input {
   position: absolute;
   right: 0;
   text-align: center;
-  margin-top: -100px;
+  margin-top: -60px;
 }
 
 a.slide_btn {
@@ -292,4 +313,18 @@ a.slide_btn {
   .slide_buttons {
     margin-top: -150px;
   }
+
+  .section3 {
+    padding-bottom: 700px;
+  }
+
+  .job_slide_viewer {
+    overflow: visible;
+  }
+
+  .job_slide_buttons {
+    margin-top: 600px;
+  }
+
+
 }
