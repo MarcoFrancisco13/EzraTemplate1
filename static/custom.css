@@ -3,13 +3,13 @@ body {
 }
 
 ul {
-  list-style-type: disc;
+  list-style-type: disc!important;
 }
 
 li {
-  color: black;
-  padding-top: 5px;
-  margin-left: 40px;
+  color: black!important;
+  padding-top: 5px!important;
+  margin-left: 40px!important;
 }
 
 footer {
@@ -71,6 +71,10 @@ input {
   color: #929292;
 }
 
+.tertiaryColor {
+  color: #629c44;
+}
+
 .required {
   color: #ff0000;
 }
@@ -117,6 +121,14 @@ input {
   text-align: center;
 }
 
+.text-end { 
+  text-align: end;
+}
+
+.text-end-responsive { 
+  text-align: end;
+}
+
 .d-flex {
   display: flex !important;
 }
@@ -141,12 +153,24 @@ input {
   padding: 0px !important;
 }
 
+.pl-5 {
+  padding-left: 5%!important;
+}
+
+.pl-10 {
+  padding-left: 10%!important;
+}
+
 .m-0 {
   margin: 0px;
 }
 
 .ml-0 {
-  margin: 0px !important;
+  margin-left: 0px !important;
+}
+
+.ml-2 {
+  margin-left: 2%!important;
 }
 
 .mt-2 {
@@ -169,16 +193,41 @@ input {
   margin-right: 3% !important;
 }
 
+.px-2 {
+  padding-left: 2%!important;
+  padding-right: 2%!important;
+}
+
+.pt-1 {
+  padding-top: 1%!important;
+}
+
+.pt-2 {
+  padding-top: 2%!important;
+}
+
 .pt-3 {
   padding-top: 3% !important;
 }
 
-.pt-50 {
-  padding-top: 50px !important;
+.pb-0 {
+  padding-bottom: 0px!important;
+}
+
+.pb-1 {
+  padding-bottom: 1%!important;
+}
+
+.pb-2 {
+  padding-bottom: 2%!important;
 }
 
 .pb-3 {
   padding-bottom: 3% !important;
+}
+
+.pt-50 {
+  padding-top: 50px !important;
 }
 
 .font-weight-bold {
@@ -195,6 +244,15 @@ input {
 
 .btn-primary {
   background-color: #033076;
+  color: white;
+  border: 0px;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 100px;
+}
+
+.btn-secondary {
+  background-color: #629c44;
   color: white;
   border: 0px;
   border-radius: 5px;
@@ -291,10 +349,58 @@ a.slide_btn {
   cursor: pointer;
 }
 
+/* MODAL */
+/* The Modal (background) */
+.customModal {
+  display: none!; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  padding-bottom: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding-top: 20px!important;
+  padding-left: 20px!important;
+  padding-right: 20px!important;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
 /* TOP NAV */
 .companyLogo {
   padding-top: 20px!important;
   padding-bottom: 30px!important;
+}
+
+.navbarButtons {
+  padding-top: 8px!important;
 }
 
 .topnav {
@@ -332,6 +438,23 @@ a.slide_btn {
   border-left: 1px solid white;
 }
 
+
+@media only screen and (max-width: 1450px) { 
+  .section3 {
+    padding-bottom: 100px;
+  }
+
+  .job_slide_viewer {
+    height: 130%;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .job_slide_buttons {
+    margin-top: 25px;
+  }
+  
+}
 
 @media only screen and (max-width: 994px) {
   .d-flex {
@@ -407,5 +530,29 @@ a.slide_btn {
   
   .topMenu6 {
     border-left: 0px solid white;
+  }
+
+  .text-end-responsive { 
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 538px) { 
+  .section3 {
+    padding-bottom: 830px;
+  }
+
+  .job_slide_buttons {
+    margin-top: 770px;
+  }  
+}
+
+@media only screen and (max-width: 400px) { 
+  .section3 {
+    padding-bottom: 960px;
+  }
+
+  .job_slide_buttons {
+    margin-top: 900px;
   }
 }

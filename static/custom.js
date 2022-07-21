@@ -1,3 +1,23 @@
+var jobDetailsModal = document.getElementById("jobDetails");
+
+var btn = document.getElementById("jobDetailsBtn");
+
+var close = document.getElementById("jobDetailsClose");
+
+btn.onclick = function() {
+  jobDetailsModal.style.display = "block";
+}
+
+close.onclick = function() {
+  jobDetailsModal.style.display = "none";
+}
+
+window.onclick = function(event) {
+  if (event.target == jobDetailsModal) {
+    jobDetailsModal.style.display = "none";
+  }
+}
+
 function openNav() {
   var x = document.getElementById("myTopnav");
   if (x.className === "topnav") {
